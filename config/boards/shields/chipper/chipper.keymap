@@ -11,14 +11,19 @@
 
 #define COMBO_TIMEOUT 60
 
-/{
+/ {
     combos {
-       compatible = "zmk,combos";
-        combo_bootloader {
+        compatible = "zmk,combos";
+ 	 combo_bootloader_left {
                 timeout-ms = <COMBO_TIMEOUT>;
-                key-positions = <0 12 24>;
+                key-positions = <0 38>;
                 bindings = <&bootloader>;
-        }
+        };
+         combo_bootloader_right {
+                timeout-ms = <COMBO_TIMEOUT>;
+                key-positions = <1 39>;
+                bindings = <&bootloader>;
+        };
     };
 };
 / {
