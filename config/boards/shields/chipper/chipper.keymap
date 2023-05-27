@@ -21,7 +21,7 @@
         };
          combo_bootloader_right {
                 timeout-ms = <COMBO_TIMEOUT>;
-                key-positions = <1 39>;
+                key-positions = <11 39>;
                 bindings = <&bootloader>;
         };
     };
