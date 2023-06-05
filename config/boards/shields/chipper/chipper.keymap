@@ -24,6 +24,11 @@
                 key-positions = <11 39>;
                 bindings = <&bootloader>;
         };
+         combo_backspace_left {
+                timeout-ms = <COMBO_TIMEOUT>;
+                key-positions = <3 5 5>;
+                bindings = <&kp BSPC>;
+        };
     };
 };
 / {
