@@ -26,7 +26,7 @@
         };
          combo_backspace_left {
                 timeout-ms = <COMBO_TIMEOUT>;
-                key-positions = <3 5 5>;
+                key-positions = <3 4 5>;
                 bindings = <&kp BSPC>;
         };
     };
