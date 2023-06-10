@@ -21,7 +21,7 @@
         compatible = "zmk,combos";
  	 combo_bootloader_left {
                 timeout-ms = <COMBO_TIMEOUT>;
-                key-positions = <0 38>;
+                key-positions = <0 12 24>; # whole most left column in same time
                 bindings = <&bootloader>;
         };
          combo_bootloader_right {
