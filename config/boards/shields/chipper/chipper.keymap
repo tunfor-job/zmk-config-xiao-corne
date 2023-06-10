@@ -14,7 +14,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define RIGHT   3
+#define RIGHT_LAYER   3
 
 / {
     combos {
@@ -28,11 +28,6 @@
                 timeout-ms = <COMBO_TIMEOUT>;
                 key-positions = <11 39>;
                 bindings = <&bootloader>;
-        };
-         combo_backspace_left {
-                timeout-ms = <COMBO_TIMEOUT>;
-                key-positions = <3 4 5>;
-                bindings = <&kp BSPC>;
         };
          combo_backspace_left {
                 timeout-ms = <COMBO_TIMEOUT>;
@@ -55,7 +50,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-            &kp LGUI &mo 1 &lt RIGHT SPACE   &kp RET &mo 2 &kp RALT
+      &kp LGUI &mo 1 &lt RIGHT_LAYER SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
